@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">ResCalc1</string>
+
+    <string-array name="colors">
+        <item>None</item>
+        <item>schwarz</item>
+        <item>braun</item>
+        <item>rot</item>
+        <item>orange</item>
+        <item>gelb</item>
+        <item>gruen</item>
+        <item>blau</item>
+        <item>violett</item>
+        <item>grau</item>
+        <item>weiß</item>
+    </string-array>
+
+    <string-array name="colors_schwarz">
+        <item>None</item>
+        <item>braun</item>
+        <item>rot</item>
+        <item>orange</item>
+        <item>gelb</item>
+        <item>gruen</item>
+        <item>blau</item>
+        <item>violett</item>
+        <item>grau</item>
+        <item>weiß</item>
+    </string-array>
+
+    <string-array name="colors_multi">
+        <item>None</item>
+        <item>silber</item>
+        <item>gold</item>
+        <item>schwarz</item>
+        <item>braun</item>
+        <item>rot</item>
+        <item>orange</item>
+        <item>gelb</item>
+        <item>gruen</item>
+        <item>blau</item>
+        <item>violett</item>
+        <item>grau</item>
+        <item>weiß</item>
+    </string-array>
+
+    <string-array name="colors_toleranz">
+        <item>None</item>
+        <item>silber</item>
+        <item>gold</item>
+        <item>braun</item>
+        <item>rot</item>
+        <item>gruen</item>
+        <item>blau</item>
+        <item>violett</item>
+        <item>grau</item>
+    </string-array>
+
+    <string-array name="colors_temp">
+        <item>None</item>
+        <item>braun</item>
+        <item>rot</item>
+        <item>orange</item>
+        <item>gelb</item>
+        <item>blau</item>
+        <item>violett</item>
+        <item>weiß</item>
+    </string-array>
+
+    <string name="colors">red,blue</string>
+</resources>
