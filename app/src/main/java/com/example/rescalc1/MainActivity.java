@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         map_color.put("blau",6);
         map_color.put("violett",7);
         map_color.put("grau",8);
-        map_color.put("weiss",9);
+        map_color.put("weiß",9);
 
         //todo ausgliedern in andere Function
         Map<String, Double> map_multi = new HashMap<String, Double>();
@@ -55,21 +55,21 @@ public class MainActivity extends AppCompatActivity {
         map_multi.put("blau",(double) 1);
         map_multi.put("violett", (double) 10);
         map_multi.put("grau",(double) 100);
-        map_multi.put("weiss",(double) 1);
+        map_multi.put("weiß",(double) 1);
 
         Map<String, String> map_multi_size = new HashMap<String, String>();
-        map_multi_size.put("silber", " Ohm");
-        map_multi_size.put("gold", " Ohm");
-        map_multi_size.put("schwarz", " Ohm");
-        map_multi_size.put("braun", " Ohm");
-        map_multi_size.put("rot", " Ohm");
-        map_multi_size.put("orange"," k Ohm");
-        map_multi_size.put("gelb"," k Ohm");
-        map_multi_size.put("gruen"," k Ohm");
-        map_multi_size.put("blau"," M Ohm");
-        map_multi_size.put("violett", "M Ohm");
-        map_multi_size.put("grau"," M Ohm");
-        map_multi_size.put("weiss"," G Ohm");
+        map_multi_size.put("silber", " Ohm ");
+        map_multi_size.put("gold", " Ohm ");
+        map_multi_size.put("schwarz", " Ohm ");
+        map_multi_size.put("braun", " Ohm ");
+        map_multi_size.put("rot", " Ohm ");
+        map_multi_size.put("orange"," k Ohm ");
+        map_multi_size.put("gelb"," k Ohm ");
+        map_multi_size.put("gruen"," k Ohm ");
+        map_multi_size.put("blau"," M Ohm ");
+        map_multi_size.put("violett", "M Ohm ");
+        map_multi_size.put("grau"," M Ohm ");
+        map_multi_size.put("weiß"," G Ohm ");
 
         //todo ausgliedern in andere Function
         Map<String, Double> map_tolerance = new HashMap<String, Double>();
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         map_temp.put("gelb",25);
         map_temp.put("blau",10);
         map_temp.put("violett", 5);
-        map_temp.put("weiss",1);
+        map_temp.put("weiß",1);
 
         //get colors of ring 1-6
         Spinner drop1=findViewById(R.id.drop1);
@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         }else if (!ring6.equals(none)){
             //all relevant
             // 5 strings, 3 numbers, multi, tolerance
-            Double number = new Double(1000*map_color.get(ring1));//+100*map_color.get(ring2)+10*map_color.get(ring3)+map_color.get(ring4));
+            Double number = new Double(100*map_color.get(ring1) +10*map_color.get(ring2)+1*map_color.get(ring3));
             number = number * map_multi.get(ring4);
             String result_final = new String("Der Widerstand beträgt"+Double.toString(number)+map_multi_size.get(ring4).toString()+
                     "mit einer Tolernanz"+Double.toString(map_tolerance.get(ring5))+"von"
